@@ -3,7 +3,7 @@
 <h3 align="center">
 	<img src="https://raw.githubusercontent.com/catppuccin/catppuccin/main/assets/logos/exports/1544x1544_circle.png" width="100" alt="Logo"/><br/>
 	<img src="https://raw.githubusercontent.com/catppuccin/catppuccin/main/assets/misc/transparent.png" height="30" width="0px"/>
-	Catppuccin-style client-side decoration plugin for Qt
+	Catppuccin for <a href="https://isocpp.org/">C++</a>
 	<img src="https://raw.githubusercontent.com/catppuccin/catppuccin/main/assets/misc/transparent.png" height="30" width="0px"/>
 </h3>
 
@@ -35,8 +35,6 @@
 ## How to compile
 
 This library uses private Qt headers, meaning it is not guaranteed to be forward or backward compatible. You’ll need to recompile it with each Qt update.
-
-While it can be built with Qt 5, it is recommended to apply relevant backports from Qt 6 for improved compatibility and features. You can find the necessary patches [from here](https://src.fedoraproject.org/rpms/qt5-qtwayland/blob/rawhide/f/qtwayland-decoration-support-backports-from-qt6.patch)
 
 Build instructions:
 
@@ -71,5 +69,5 @@ export QT_WAYLAND_DECORATION=catppuccin
 </p>
 
 <p align="center">
-	<a href="https://github.com/catppuccin/catppuccin/blob/main/LICENSE"><img src="https://img.shields.io/static/v1.svg?style=for-the-badge&label=License&message=LGPL 2.1&logoColor=d9e0ee&colorA=363a4f&colorB=b7bdf8"/></a>
+	<a href="https://github.com/catppuccin/catppuccin/blob/main/LICENSE"><img src="https://img.shields.io/static/v1.svg?style=for-the-badge&label=License&message=MIT&logoColor=d9e0ee&colorA=363a4f&colorB=b7bdf8"/></a>
 </p>
