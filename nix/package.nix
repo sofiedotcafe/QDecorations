@@ -40,7 +40,7 @@ lib.checkListOfEnum "${pname} Valid theme flavors(s)" validFlavors
   rec {
     inherit version pname;
 
-    src = ../../.;
+    src = ../.;
 
     nativeBuildInputs = [
       cmake

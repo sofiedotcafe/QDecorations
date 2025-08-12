@@ -9,6 +9,8 @@
       inputs.nixpkgs-lib.follows = "nixpkgs";
     };
 
+    hercules-ci-effects.url = "github:hercules-ci/hercules-ci-effects";
+
     pre-commit-hooks = {
       url = "github:cachix/pre-commit-hooks.nix";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -23,7 +25,12 @@
       ];
       imports = [
         inputs.pre-commit-hooks.flakeModule
+        inputs.hercules-ci-effects.flakeModule
       ];
+
+      flake.homeModules = {
+        qt-decorations = ./nix/homeModule.nix;
+      };
 
       perSystem =
         {
